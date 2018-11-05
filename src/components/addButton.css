@@ -1,0 +1,56 @@
+.add-button-wrapper {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #3e94ec;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    padding:10px;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    transition-delay: 0.3s;
+}
+
+.add-button-wrapper:hover {
+    width: 100%;
+    transition-delay: 0s;
+}
+
+.add-button-wrapper p {
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.3s ease;
+    transition-delay: 0s;
+}
+
+.add-button-wrapper:hover p {
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+
+.add-button .cross {
+    padding: 0;
+    position: absolute;
+    left:24px;
+    width: 20px;
+    height: 4px;
+    background-color: #fff;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    border-radius: 2px;
+    transition: 0.3s ease;
+    transition-delay: 0.3s;
+}
+
+.add-button .cross:nth-child(1){
+    transform: rotate(90deg);
+}
+
+.add-button-wrapper:hover .cross{
+    transition-delay: 0s;
+    transform: rotate(360deg);
+    opacity: 0;
+}

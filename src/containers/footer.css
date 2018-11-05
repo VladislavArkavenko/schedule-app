@@ -1,0 +1,65 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px 0 0;
+}
+
+/*Save Button*/
+.save-button {
+    text-transform: uppercase;
+    color: #d5dde5;
+    background:#1b1e24;
+    border: 1px solid #1b1e24;
+    border-radius: 5px;
+    width: 200px;
+    font-size:15px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+.save-button:focus {
+    outline: none;
+}
+.save-button p {
+    pointer-events: none;
+}
+
+.done {
+    animation-name: save-btn-anim;
+    animation-duration: 2.5s;
+}
+
+@keyframes save-btn-anim {
+    50% {
+        background-color: #199229;
+        border-color: #199229;
+    }
+    100% {
+        background-color: #1b1e24;
+        border-color: #1b1e24;
+    }
+}
+/*Delete button*/
+
+.delete-button {
+    font-size: 44px;
+    color: #1b1e24;
+}
+
+.delete-button:hover {
+    animation-name: delete-btn-anim;
+    animation-duration: 1.5s;
+}
+
+@keyframes delete-btn-anim {
+    33% {
+        transform: rotate(10deg);
+    }
+    66% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
